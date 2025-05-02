@@ -11,6 +11,13 @@
 - [x] Solution design document
 - [x] Project tracker setup
 
+### Backend Development
+- [x] Setup project structure
+- [x] Configure development environment
+- [x] Create basic agent framework
+- [x] Configure environment variables
+- [x] Set up Python backend environment
+
 ## In Progress 🔄
 
 ### Documentation
@@ -18,20 +25,18 @@
 - [ ] Database schema design
 
 ### Backend Development
-- [ ] Setup project structure
-- [ ] Configure development environment
-- [ ] Create basic agent framework
+- [ ] Create basic API endpoints
+- [ ] Implement agent initialization logic
+- [ ] Set up local database solution
 
 ## Backlog 📋
 
 ### Phase 1: Core Setup
 - [ ] Initialize Next.js frontend project
-- [ ] Set up Python backend environment
-- [ ] Configure environment variables
-- [ ] Create basic API endpoints
+- [ ] Create basic UI layout and navigation
 - [ ] Implement agent initialization logic
 - [ ] Set up local database solution
-- [ ] Create basic UI layout and navigation
+- [ ] Create basic API endpoints
 
 ### Phase 2: Agent Implementation
 - [ ] Implement Orchestrator Agent

@@ -24,6 +24,8 @@ wheels/
 venv/
 env/
 ENV/
+.venv/
+
 
 # Next.js
 .next/
@@ -43,6 +45,7 @@ yarn-error.log*
 .vscode/
 *.swp
 *.swo
+
 
 # Logs
 logs

@@ -1,0 +1,19 @@
+--index-url https://mirrors.aliyun.com/pypi/simple/
+
+# API Framework
+fastapi
+uvicorn
+pydantic
+
+# Database
+sqlalchemy
+alembic
+
+# AI and Agent Framework
+openai
+langchain
+
+# Utilities
+python-dotenv
+python-multipart
+requests
