@@ -16,6 +16,7 @@ import uvicorn
 from backend.database.database import engine, Base
 from backend.database.models import User, Tournament, Match, Point, Analysis, Recommendation, UserPreference
 import argparse
+from backend.app.config_loader import config, API_HOST, API_PORT, API_DEBUG, API_RELOAD
 
 def init_db():
     """Initialize the database with tables and sample data"""
@@ -32,17 +33,19 @@ def init_db():
 def run_server():
     """Run the FastAPI server"""
     print("Starting FastAPI server...")
+    print(f"Server will be available at http://{API_HOST}:{API_PORT}")
     uvicorn.run(
         "backend.app.main:app", 
-        host=os.getenv("API_HOST", "localhost"),
-        port=int(os.getenv("API_PORT", 8000)),
-        reload=True
+        host=API_HOST,
+        port=API_PORT,
+        reload=API_RELOAD
     )
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Tennis Tournament Analysis System")
     parser.add_argument("--init-db", action="store_true", help="Initialize the database")
     parser.add_argument("--run-server", action="store_true", help="Run the FastAPI server")
+    parser.add_argument("--config", type=str, help="Path to custom config file")
     
     args = parser.parse_args()
     

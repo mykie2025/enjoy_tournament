@@ -23,6 +23,11 @@ class Settings(BaseSettings):
     TOURNAMENT_INFO_MODEL: str = os.getenv("TOURNAMENT_INFO_MODEL", "gpt-4o-mini")
     TENNIS_SKILL_COACH_MODEL: str = os.getenv("TENNIS_SKILL_COACH_MODEL", "gpt-4o-mini")
     
+    # External API Settings
+    SPORTRADAR_API_KEY: str = os.getenv("SPORTRADAR_API_KEY", "")
+    TENNIS_DATA_API_KEY: str = os.getenv("TENNIS_DATA_API_KEY", "")
+    TENNIS_TOUR_API_KEY: str = os.getenv("TENNIS_TOUR_API_KEY", "")
+    
     class Config:
         env_file = ".env"
 

@@ -1,0 +1,65 @@
+# Tennis Tournament Analysis System Configuration
+
+# Server Configuration
+server:
+  # Backend API Server
+  api:
+    host: localhost
+    port: 9000
+    debug: true
+    reload: true
+  
+  # Frontend Server
+  frontend:
+    host: localhost
+    port: 9090
+    dev_mode: true
+
+# Data Sources Configuration
+data_sources:
+  # SportRadar API Configuration
+  sportradar:
+    base_url: https://api.sportradar.com/tennis/production/v3
+    cache_duration_seconds: 21600  # 6 hours
+  
+  # Tennis-Data API Configuration
+  tennis_data:
+    enabled: true
+    base_url: https://api.tennis-data.com/v1
+  
+  # Tennis Tour API Configuration
+  tennis_tour:
+    enabled: true
+    base_url: https://api.tennis-tour.com/v1
+  
+  # Local Database Configuration
+  local_db:
+    enabled: true
+    connection_string: sqlite:///./tennis_tournament.db
+
+# Agent Configuration
+agents:
+  # Tournament Info Agent Configuration
+  tournament_info:
+    model_name: gpt-4o-mini
+    temperature: 0.2
+    max_tokens: 4000
+  
+  # Tennis Skill Coach Agent Configuration
+  skill_coach:
+    model_name: gpt-4o
+    temperature: 0.3
+    max_tokens: 4000
+  
+  # Orchestrator Agent Configuration
+  orchestrator:
+    model_name: gpt-4o
+    temperature: 0.1
+    max_tokens: 4000
+
+# UI Configuration
+ui:
+  theme: light
+  auto_refresh_interval_seconds: 300  # 5 minutes
+  match_display_limit: 10
+  tournament_display_limit: 5

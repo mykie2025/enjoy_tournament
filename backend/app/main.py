@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 
 # Import API routers
-from ..api import tournaments, matches, points, analyses, recommendations, agents
+from backend.api import tournaments, matches, points, analyses, recommendations, agents
 
 # Load environment variables
 load_dotenv()

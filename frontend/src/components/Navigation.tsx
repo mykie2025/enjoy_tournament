@@ -13,6 +13,7 @@ const Navigation = () => {
     { name: 'Dashboard', href: '/' },
     { name: 'Match Analysis', href: '/match-analysis' },
     { name: 'Skill Development', href: '/skill-development' },
+    { name: 'Tournament Info', href: '/tournament-info' },
   ];
 
   const toggleMobileMenu = () => {
