@@ -4,6 +4,7 @@
 fastapi
 uvicorn
 pydantic
+pydantic-settings
 
 # Database
 sqlalchemy
