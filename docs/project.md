@@ -18,6 +18,10 @@
 - [x] Configure environment variables
 - [x] Set up Python backend environment
 
+### Frontend Development
+- [x] Initialize Next.js frontend project
+- [x] Create basic UI layout and navigation
+
 ## In Progress 🔄
 
 ### Documentation
@@ -32,8 +36,6 @@
 ## Backlog 📋
 
 ### Phase 1: Core Setup
-- [ ] Initialize Next.js frontend project
-- [ ] Create basic UI layout and navigation
 - [ ] Implement agent initialization logic
 - [ ] Set up local database solution
 - [ ] Create basic API endpoints
