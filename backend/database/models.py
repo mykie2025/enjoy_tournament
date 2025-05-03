@@ -27,6 +27,9 @@ class Tournament(Base):
     end_date = Column(DateTime)
     surface = Column(String)
     category = Column(String)  # Grand Slam, ATP 1000, etc.
+    external_id = Column(String, nullable=True, index=True)  # ID from external API
+    is_selected = Column(Boolean, default=False)  # Track if tournament is selected
+    status = Column(String, default="upcoming")  # upcoming, live, ended
     
     # Relationships
     matches = relationship("Match", back_populates="tournament")
